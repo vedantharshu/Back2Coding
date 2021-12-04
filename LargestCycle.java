@@ -1,18 +1,19 @@
 import java.util.*;
 public class LargestCycle {
     public static void main(String args[]) {
-      Scanner sc=new Scanner(System.in);
-      int t=sc.nextInt();
-      int i,n;
-      int a[];
-      for(i=0;i<t;i++){
-          n=sc.nextInt();
-          a=new int[n];
-          for(int j=0;j<n;j++)
-            a[j]=sc.nextInt();
-            int ans = largestCycle(a);
-        System.out.println(ans);
-      }
+      try (Scanner sc = new Scanner(System.in)) {
+        int t=sc.nextInt();
+          int i,n;
+          int a[];
+          for(i=0;i<t;i++){
+              n=sc.nextInt();
+              a=new int[n];
+              for(int j=0;j<n;j++)
+                a[j]=sc.nextInt();
+                int ans = largestCycle(a);
+            System.out.println(ans);
+          }
+    }
     }
     public static boolean hasEle(int a, int[] n){
         for(int x: n){
