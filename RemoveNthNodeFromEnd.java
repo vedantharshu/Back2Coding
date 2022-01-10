@@ -1,6 +1,6 @@
 //Definition for singly-linked list.
 //Link:https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-public class ListNode {
+class ListNode {
     int val;
     ListNode next;
     ListNode() {}
